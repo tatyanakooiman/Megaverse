@@ -1,14 +1,16 @@
-namespace Megaverse
+namespace main
 {
     public abstract class AstralObject
     {
-        public int Row { get; set; }
-        public int Column { get; set; }
+        public string candidateId { get; set; }
+        public int row { get; set; }
+        public int column { get; set; }
 
         protected AstralObject(int row, int column)
         {
-            Row = row;
-            Column = column;
+            candidateId = "a5d9cfa9-fa99-4a3b-aa21-512fcbe824a9";
+            this.row = row;
+            this.column = column;
         }
     }
 }

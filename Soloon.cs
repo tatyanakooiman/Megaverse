@@ -1,4 +1,4 @@
-namespace Megaverse
+namespace main
 {
     public class Soloon : AstralObject
     {

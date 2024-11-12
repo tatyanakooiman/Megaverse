@@ -5,19 +5,19 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
-namespace Megaverse
+namespace main
 {
     public class MegaverseService
     {
         private readonly HttpClient _httpClient;
 
-        public MegaverseService(string candidateId)
+        public MegaverseService()
         {
             _httpClient = new HttpClient
             {
                 BaseAddress = new Uri("https://challenge.crossmint.io/api/")
             };
-            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", candidateId);
+            //_httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", candidateId);
         }
 
         public async Task AddPolyanet(int row, int column)
