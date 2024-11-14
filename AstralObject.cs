@@ -6,9 +6,16 @@ namespace main
         public int row { get; set; }
         public int column { get; set; }
 
-        protected AstralObject(int row, int column)
+        protected AstralObject(string candidateId)
         {
-            candidateId = "a5d9cfa9-fa99-4a3b-aa21-512fcbe824a9";
+            this.candidateId = candidateId;
+            row = 0;
+            column = 0;
+        }
+        
+        protected AstralObject(string candidateId, int row, int column)
+        {
+            this.candidateId = candidateId;
             this.row = row;
             this.column = column;
         }
